@@ -1,7 +1,10 @@
 # Titanic Survival Prediction
 
-**Goal:** predict whether a passenger survived, from class, sex, age and fare.
+**Goal:** Goal: predict whether a passenger survived, from class, sex, age, fare, family size and titles.
 
+## Credit
+Kaggle Titanic Dataset
+  
 ## Data and cleaning
 - 891 passengers, 12 columns
 - Missing: Age (177, filled with the median), Cabin (687, not used), Embarked (2, not used)
@@ -32,8 +35,8 @@ forced simpler questions and raised the honest (cross-validated) score to 83.7%.
 from 74.9% to 80.4% depending on which 20% of passengers was hidden, so a single
 train/test split can be lucky or unlucky. 5-fold cross-validation tests every
 passenger once and averages the results. I also kept a separate test set that
-no decision touched, and the final model scored 84.4% on it, which matched the
-cross-validation estimate.
+no decision touched, and the final model scored 84.4% on it, which was matched 
+close to the cross-validation estimate.
 
 **What mattered for survival.** Sex and class dominated. First-class women
 survived 96.8% of the time and third-class men only 13.5%, and a third-class
